@@ -61,6 +61,22 @@ body {
     letter-spacing: 0.02em;
 }
 
+.contact-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.mail-icon {
+    width: 16px;
+    height: 12px;
+}
+
+.tel-icon {
+    width: 10px;
+    height: 16px;
+}
+
 ul {
     list-style: none;
 }
@@ -128,6 +144,10 @@ ul {
     line-height: 1.71;
 }
 
+.article-images {
+    margin-bottom: 30px;
+}
+
 .job-description {
     display: flex;
     text-align: center;
@@ -145,7 +165,6 @@ ul {
     padding-right: 15px;
     padding-bottom: 44px;
     padding-left: 15px;
-    margin-top: -94px;
 }
 
 .container h2 {
@@ -236,7 +255,7 @@ ul {
 
 .job-bg {
     background-color: #ffffff;
-    
+
     border-radius: 0px 0px 4px 4px;
     padding: 30px 0px;
 }
@@ -252,14 +271,12 @@ ul {
     gap: 9px;
     font-style: normal;
     margin-top: 20px;
-    
 }
 figcaption {
     border-right: 1px solid #ececec;
     border-bottom: 1px solid #ececec;
     border-left: 1px solid #ececec;
     padding: 20px 24px;
-   
 }
 
 .worker {
@@ -272,15 +289,11 @@ figcaption {
     margin-bottom: 10px;
 }
 
-
 .position {
     display: block;
     color: var(--contact-item-header-color);
     font-size: 16px;
     line-height: 1.18;
-    
-    
-    
 }
 .projects {
     color: #212121;
@@ -288,7 +301,6 @@ figcaption {
     font-size: 18px;
     line-height: 2;
     margin-bottom: 4px;
-    
 }
 
 .project-name {
@@ -297,7 +309,6 @@ figcaption {
     text-align: left;
     font-size: 16px;
     line-height: 1.87;
-    
 }
 
 img {
@@ -341,4 +352,29 @@ img {
 
 .footer-padding {
     padding: 60px 0;
+}
+
+.footer-description {
+    display: flex;
+   justify-content: flex-start;
+   flex-direction: column;
+    padding-left: 531px;
+   
+}
+
+.footer-title {
+    color: #ffffff;
+    line-height: 1.14;
+    font-size: 14px;
+
+   
+}
+
+.photo-list {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media {
+    margin-bottom: 18px;
 }
