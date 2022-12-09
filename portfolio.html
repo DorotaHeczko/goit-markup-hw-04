@@ -22,7 +22,7 @@
         <link href="css/style.css" rel="stylesheet" />
     </head>
     <body>
-        <header class="header-wrapper">
+           <header class="header-wrapper">
             <div class="container">
                 <nav class="navigation">
                     <a class="logo" href="index.html">Web<span class="logo--black">Studio</span></a>
@@ -35,10 +35,19 @@
                         <li><a href="#">Kontakt</a></li>
                     </ul>
                 </nav>
-
                 <div class="header-contacts">
-                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    <a href="tel:+48111111111">+48 111 111 111</a>
+                    <div class="contact-icons">
+                        <svg width="16" height="12">
+                            <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                        </svg>
+                        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </div>
+                    <div class="contact-icons">
+                        <svg width="10" height="16">
+                            <use href="./images/symbol-defs.svg#icon-smartphone-1"></use>
+                        </svg>
+                        <a href="tel:+48111111111">+48 111 111 111</a>
+                    </div>
                 </div>
             </div>
         </header>
@@ -188,28 +197,40 @@
             </section>
         </main>
 
-        <footer class="dark-bg footer-padding">
-            <div class="container">
-                <a class="logo" href="index.html"
-                    >Web<span class="logo--white">Studio</span></a
-                >
-                <address>
-                    <ul class="list-item-two">
-                        <li>
-                            <a
-                                class="address"
-                                href="https://goo.gl/maps/pw9xPf9EfgZSbfXv6"
-                                target="_blank"
-                                >m. Warszawa, Aleje Jerozolimskie 21</a
-                            >
-                        </li>
-                        <li>
-                            <a class="contact" href="mailto:info@example.com">info@example.com</a>
-                        </li>
+ <footer class="dark-bg footer-padding">
+            <div class="container footer-items">
+                <div class="footer-flex">
+                    <a class="logo" href="index.html">Web<span class="logo--white">Studio</span></a>
+                    <address>
+                        <ul class="list-item-two">
+                            <li>
+                                <a
+                                    class="address"
+                                    href="https://goo.gl/maps/pw9xPf9EfgZSbfXv6"
+                                    target="_blank"
+                                    >m. Warszawa, Aleje Jerozolimskie 21</a
+                                >
+                            </li>
+                            <li>
+                                <a class="contact" href="mailto:info@example.com"
+                                    >info@example.com</a
+                                >
+                            </li>
 
-                        <li><a class="contact no-underline" href="tel:+48111111111">+48 111 111 111</a></li>
-                    </ul>
-                </address>
+                            <li>
+                                <a class="contact no-underline" href="tel:+48111111111"
+                                    >+48 111 111 111</a
+                                >
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer-description">
+                    <h3 class="footer-title">DOŁĄCZ DO NAS</h3>
+                    <svg width="206" height="44">
+                        <use href="./images/symbol-defs.svg#icon-Social-links"></use>
+                    </svg>
+                </div>
             </div>
         </footer>
     </body>
