@@ -3,7 +3,6 @@
     --contact-item-header-color: #757575;
     --main-color: #2196f3;
     --button-color: #ffffff;
-  
 }
 
 h1,
@@ -68,6 +67,11 @@ body {
     align-items: center;
 }
 
+.header-contacts svg:hover,
+.header-contacts svg:focus {
+    fill: var(--main-color);
+}
+
 ul {
     list-style: none;
 }
@@ -93,11 +97,11 @@ ul {
 .header-contacts a:hover,
 .header-contacts a:focus {
     color: var(--main-color);
-    
 }
 .list-item:hover,
 .nav-item:focus {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .dark-bg {
@@ -205,10 +209,12 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('../images/img-team.jpg');
+    background-image: linear-gradient( rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4) ),
+        url('../images/img-team.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-image: linear-gradient(#2f303a);
 }
 
 .page-button {
@@ -243,7 +249,6 @@ ul {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    
 }
 
 .gray-bg {
@@ -261,13 +266,11 @@ ul {
 .portfolio-grid {
     margin: 0px;
     margin-top: 34px;
-   
 }
-
 
 .portfolio-grid:hover,
 .portfolio-grid:focus {
-    border-radius: 4px ;
+    border-radius: 4px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -388,11 +391,15 @@ img {
 }
 
 .social-media {
-margin-top: 16px; 
+    margin-top: 16px;
 }
 
-.social-media:hover,
-.social-media:focus {
+.social-media svg:hover,
+.social-media svg:focus {
     color: var(--main-color);
 }
 
+.footer-description svg:hover,
+.footer-description svg:focus {
+    fill: #2196f3;
+}
