@@ -62,9 +62,9 @@ body {
 }
 
 .contact-icons {
-    color: #757575;
+    color: var(--contact-item-header-color);
     align-items: center;
-    fill: #757575;
+    fill: var(--contact-item-header-color);
 }
 
 .contact-icons > a > svg {
@@ -405,12 +405,14 @@ img {
 .photo-list-border:hover,
 .photo-list-border:focus {
   
-    border: 1px solid #2196f3;
+    border: 1px solid var(--main-color);
 }
 .photo-list-border:hover > svg {
     fill: var(--main-color);
 }
-
+.photo-list-border:focus > svg {
+    fill: var(--main-color);
+}
 *:focus {
     outline: none;
 }
@@ -448,7 +450,7 @@ img {
 
 .social-media a:hover,
 .social-media a:focus {
-    background-color: #2196f3;
+    background-color:var(--main-color);
     fill: #fff;
 }
 
@@ -466,5 +468,5 @@ img {
 }
 .footer-items a:hover,
 .footer-items a:focus {
-    background-color: #2196f3;
+    background-color: var(--main-color);
 }
