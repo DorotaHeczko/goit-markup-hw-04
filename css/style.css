@@ -62,13 +62,16 @@ body {
 }
 
 .contact-icons {
-    display: flex;
-    gap: 10px;
+    color: #757575;
     align-items: center;
 }
 
-.header-contacts svg:hover,
-.header-contacts svg:focus {
+.contact-icons > a > svg {
+    margin-right: 10px;
+}
+
+.header-contacts a:hover,
+.header-contacts a:focus {
     fill: var(--main-color);
 }
 
@@ -97,11 +100,6 @@ ul {
 .header-contacts a:hover,
 .header-contacts a:focus {
     color: var(--main-color);
-}
-.list-item:hover,
-.nav-item:focus {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .dark-bg {
@@ -151,6 +149,11 @@ ul {
     line-height: 1.16;
     gap: 30px;
     padding-left: 15px;
+}
+.team {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .title {
@@ -259,9 +262,6 @@ ul {
 
 .job-bg {
     background-color: #ffffff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
     padding: 30px 0px;
 }
 
@@ -368,6 +368,7 @@ img {
 .footer-description {
     display: flex;
     flex-direction: column;
+    margin-top: 12px;
     margin-left: 70px;
 }
 
@@ -383,6 +384,11 @@ img {
     display: flex;
     justify-content: center;
     fill: #afb1b8;
+    gap: 30px;
+}
+.photo-list-border {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
 }
 
 .footer-flex {
@@ -395,6 +401,11 @@ img {
     gap: 10px;
 }
 
+.address-footer {
+    display: flex;
+    gap: 10px;
+}
+
 .social-media {
     display: flex;
     fill: #afb1b8;
@@ -402,30 +413,38 @@ img {
     justify-content: center;
     margin-top: 16px;
 }
+.social-media-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
 
-.social-media svg:hover,
-.social-media svg:focus {
-    fill: #2196f3;
+.social-media a:hover,
+.social-media a:focus {
+    background-color: #2196f3;
 }
 
 .photo-list svg:hover,
 .photo-list svg:focus {
-  fill: #2196f3;
+    fill: #2196f3;
 }
 
 .social-media-footer {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
     gap: 10px;
     fill: #ffffff;
     background-color: rgba(255, 255, 255, 0.1);
     width: 44px;
     height: 44px;
-    align-items: center;
-    border-radius: 50%;
-    justify-content: center;
+    margin-bottom: 100px;
 }
- .social-media-footer svg:hover,
- .social-media-footer svg:focus {
-    fill: #2196f3;
- }
-
+.footer-items a:hover,
+.footer-items a:focus {
+    background-color: #2196f3;
+}
